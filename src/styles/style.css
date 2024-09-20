@@ -1,0 +1,146 @@
+@import url("./reset.css");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-primary: #02040f;
+  --color-neutral: #e5dada;
+}
+
+body {
+  background-color: var(--color-neutral);
+  color: var(--color-primary);
+  font-family: "Bitter", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: auto;
+  width: 96%;
+  max-width: 960px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 2.5rem 0;
+  background-color: var(--color-neutral);
+}
+
+.navbar__wrapper {
+  display: flex;
+}
+
+.navbar__links {
+  display: flex;
+}
+
+.navbar__link {
+  color: var(--color-primary);
+  margin-right: 1.5rem;
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.header__image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1.25rem;
+}
+
+.header__cta {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-neutral);
+}
+
+.header__heading {
+  font-size: 6rem;
+}
+
+.header__sub-heading {
+  font-size: 3rem;
+  line-height: 2;
+}
+
+.header__paragraph {
+  margin-top: 2rem;
+  line-height: 2;
+}
+
+.header__links {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  margin-right: 1.75rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.header__link-text {
+  margin-left: 0.5rem;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 8rem 0;
+  min-height: 100vh;
+}
+
+.section__heading {
+  margin-bottom: 8rem;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles--projects {
+  margin-top: 4rem;
+}
+
+.article {
+  margin-bottom: 4rem;
+}
+
+.article__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.article__header {
+}
+
+.article__content {
+  margin-top: 1.5rem;
+  line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem;
+}
+
+.footer__copyright {
+  text-align: center;
+}
